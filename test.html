@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cửa hàng Kim Cương - Hiếu 0 thứ </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Thanh điều hướng -->
+    <nav class="navbar">
+        <div class="logo">Kim Cương Hiếu 0 thứ</div>
+        <ul class="nav-links">
+            <li><a href="#home">Trang Chủ</a></li>
+            <li><a href="#products">Sản Phẩm</a></li>
+            <li><a href="#about">Giới Thiệu</a></li>
+            <li><a href="#contact">Liên Hệ</a></li>
+            <li><a href="#cart" id="cart-toggle">Giỏ Hàng (<span id="cart-count">0</span>)</a></li>
+        </ul>
+    </nav>
+
+    <!-- Phần Trang Chủ -->
+    <section id="home" class="hero">
+        <h1>Kim Cương Vũ Trụ</h1>
+        <p>Khám phá vẻ đẹp hoàn mỹ của Vũ Trụ.</p>
+        <a href="#products" class="cta-button">Xem Bộ Sưu Tập</a>
+    </section>
+
+    <!-- Phần Sản Phẩm -->
+    <section id="products" class="products">
+        <h2>Sản Phẩm Nổi Bật</h2>
+        <div class="product-grid">
+            <div class="product-item" data-name="Nhẫn Kim Cương 1 Carat" data-price="50000000">
+                <img src="https://file.hstatic.net/200000355853/article/nhan-kim-cuong-1-carat-2_9da1dad52f4645ebb531ad04dbc75458.jpg" alt="Nhẫn Kim Cương">
+                <h3>Nhẫn Kim Cương 1 Carat</h3>
+                <p>Giá: 50.000.000 VNĐ</p>
+                <button class="add-to-cart">Thêm vào Giỏ Hàng</button>
+            </div>
+            <div class="product-item" data-name="Dây Chuyền Ánh Sao" data-price="75000000">
+                <img src="https://lili.vn/wp-content/uploads/2024/01/Day-chuyen-bac-cap-doi-hinh-anh-sao-Cyrus-LILI_106226_1.jpg" alt="Dây Chuyền Kim Cương">
+                <h3>Dây Chuyền Ánh Sao</h3>
+                <p>Giá: 75.000.000 VNĐ</p>
+                <button class="add-to-cart">Thêm vào Giỏ Hàng</button>
+            </div>
+            <div class="product-item" data-name="Bông Tai Vẻ Đẹp" data-price="40000000">
+                <img src="https://glosbejewelry.net/upload/product/bong-tai-moissanite-8ly.jpg" alt="Bông Tai Kim Cương">
+                <h3>Bông Tai Vẻ Đẹp</h3>
+                <p>Giá: 40.000.000 VNĐ</p>
+                <button class="add-to-cart">Thêm vào Giỏ Hàng</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Phần Giỏ Hàng -->
+    <section id="cart" class="cart-section hidden">
+        <h2>Giỏ Hàng</h2>
+        <div id="cart-items"></div>
+        <p>Tổng tiền: <span id="cart-total">0 VNĐ</span></p>
+        <button id="clear-cart">Xóa Giỏ Hàng</button>
+    </section>
+
+    <!-- Phần Giới Thiệu -->
+    <section id="about" class="about">
+        <h2>Giới Thiệu</h2>
+        <p>Chúng tôi hợp tác với NASA để mang đến cho mọi người những viên Kim Cương đến từ những hành tinh khác nhau.</p>
+    </section>
+
+    <!-- Phần Liên Hệ -->
+    <section id="contact" class="contact">
+        <h2>Liên Hệ</h2>
+        <form>
+            <input type="text" placeholder="Họ và Tên" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Tin nhắn của bạn" required></textarea>
+            <button type="submit">Gửi</button>
+        </form>
+    </section>
+
+    <!-- Chân trang -->
+    <footer>
+        <p>© 2025 Diamond Luxe. Bảo lưu mọi quyền.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

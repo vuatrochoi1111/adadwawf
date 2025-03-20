@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('https://tranhdecors.com/wp-content/uploads/2024/10/Background-gold-sang-trong.jpg') no-repeat center/cover fixed;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(13, 13, 13, 0.8); /* Màu đen trong suốt */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d4af37;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    color: #d4af37;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #fff;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Lớp phủ tối để chữ dễ đọc */
+}
+
+.hero h1 {
+    font-size: 60px;
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #d4af37;
+    color: #1a1a1a;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #fff;
+}
+
+.products, .about, .contact, .cart-section {
+    padding: 80px 50px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7); /* Lớp phủ tối cho các section */
+}
+
+.products h2, .about h2, .contact h2, .cart-section h2 {
+    font-size: 40px;
+    color: #d4af37;
+    margin-bottom: 40px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.product-item {
+    background-color: rgba(43, 43, 43, 0.9); /* Màu nền sản phẩm trong suốt nhẹ */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-item h3 {
+    font-size: 22px;
+    color: #d4af37;
+}
+
+.product-item p {
+    font-size: 18px;
+}
+
+.add-to-cart {
+    padding: 10px 20px;
+    background-color: #d4af37;
+    color: #1a1a1a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #fff;
+}
+
+.cart-section {
+    background: rgba(43, 43, 43, 0.9); /* Nền giỏ hàng trong suốt nhẹ */
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cart-section.hidden {
+    display: none;
+}
+
+#cart-items {
+    margin-bottom: 20px;
+}
+
+#cart-items div {
+    font-size: 18px;
+    padding: 10px 0;
+    border-bottom: 1px solid #d4af37;
+}
+
+#cart-total {
+    font-size: 22px;
+    color: #d4af37;
+}
+
+#clear-cart {
+    padding: 10px 20px;
+    background-color: #d4af37;
+    color: #1a1a1a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#clear-cart:hover {
+    background-color: #fff;
+}
+
+.about p {
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(43, 43, 43, 0.9);
+    color: #fff;
+}
+
+.contact button {
+    padding: 15px;
+    background-color: #d4af37;
+    color: #1a1a1a;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact button:hover {
+    background-color: #fff;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(13, 13, 13, 0.8);
+    color: #d4af37;
+}
